@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NFCDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Read Data</string>
+    <string name="title_section2">Write Data</string>
+    <string name="dummy_hex">A7 45 23 20 20 32 46 CD\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87\nB5 C7 D6 51 48 92 9A DF\nE4 55 C5 FF FF 24 12 87</string>
+    <string name="ndef">NDEF File</string>
+    <string name="uri">URI record</string>
+    <string name="dummy_uri">http://www.arrow.com</string>
+    <string name="Text">Binary record</string>
+    <string name="dummy_text">caro amico ti scrivo, cosi\' mi distraggo un po\', e siccome sei molto lontano, piu\' forte ti scrivero\'</string>
+    <string name="write_allowed">Write allowed</string>
+</resources>
