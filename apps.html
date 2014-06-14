@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>SmartTool by ipTronix</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>SmartTool</h1>
+        <h2>NFC enabled microcontroller board for home automation</h2>
+        <a href="https://github.com/ipTronix/SmartTool" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1> SmartTool Demo Applications </h1>
+          Along with the libraries github repository contains several ready to run demo applications which are described in detail in the reference manual.
+          below you can find a brief description of each app.
+          <h2> Embedded Demo Applications </h2>
+          <h3> Authentication (<a href="https://github.com/ipTronix/SmartTool/tree/master/software/ARM/APP_Authentication"> git </a>)</h3> 
+          Demonstrates the usage of Desfire cards to perform authentication in access control applications. Desfire cards are written with an encrypted application that contains a DWORD which is meant to hold an authorization bitfield. the application can write "authorized" and "unauthorized" cards or it can read back the card and, if an authorized bitfield is detected it will toggle the on board MOSFET.
+          <p> Note that usage of UID for authentication is not recommended as UIDs can be eventually spoofed. note also that since Mifare Classic cards have been hacked it's highly recommended to use the more recent cards which implement 3DES or AES.
+          <h3> NDEF I/O (<a href="https://github.com/ipTronix/SmartTool/tree/master/software/ARM/APP_NDEF_IO"> git </a>)</h3> 
+          This application demoes card reader and card emulation functionality. The NFC task periodically toggles between card reader and card emulation. In card reader mode the application reads the NDEF message from the card and displays its content on the LCD. the content being displayed is not very useful as it is not parsed however it can serve as the base for applications needing to read cards. supported card types are Mifare UL, Mifare Classic and Mifare Desfire.
+          <p>In card emulation mode SmartTool presents itself as a card with a NDEF message containing the arrow web site url. if interacting with the Android demo application SmartTool can also receive a message back and display it on the screen.
+          <h3> Vending (<a href="https://github.com/ipTronix/SmartTool/tree/master/software/ARM/APP_Vending"> git </a>)</h3> 
+          Implements a simple vending machine which can either charge credit to a card or let user select goods and purchase them. Note that in order to provide reasonable security this application supports only Desfire cards.
+<p>
+          <h2> Android Demo Applications </h2>
+          <h3> NFCDemo (<a href="https://github.com/ipTronix/SmartTool/tree/master/software/android_nfcdemo"> git </a>)</h3> 
+          Very simple Android application allowing to read NFC messages from SmartTool in card reader mode and eventually write back a response message. useful to demonstrate bidirectional communication with smartphones.
+<p>
+          <h2> Test Applications </h2>
+          <h3> Antenna Calibration (<a href="https://github.com/ipTronix/SmartTool/tree/master/software/ARM/APP_AntennaCalibration"> git </a>)</h3> 
+          This application uses the on board PLL to sweep frequencies around the NFC central frequency and using the on board circuitry it measures the amplitude of the signal at the antenna terminals. the resulting output is a spectrum analisys of antenna resonance profile. The application also looks for peak and displays center frequency. This tool is very useful to verify antenna calibration and given that the antenna daughterboard is removable, you can use the tool to measure your target board's antenna performance by just wiring SmartTool to your target board. note that in order to work properly you have to connect the antenna daugtherboard to the upper row of the HMI connector
+          <h3> Hardware Test (<a href="https://github.com/ipTronix/SmartTool/tree/master/software/ARM/APP_HwTest"> git </a>)</h3> 
+          This application implements a simple hardware test used in the production line to verify that hardware is working properly. Display shows temperature read from the internal temperature sensor and allow checking functionality of the embedded touch keys. approaching a card the NDEF message is read and displayed. 
+          
+        </section>
+
+        <aside id="sidebar">
+          <a href="index.html" class="button">
+              Home
+          </a>
+          <a href="details.html" class="button">
+              Details
+          </a>
+          <a href="documentation.html" class="button">
+              Documentation
+          </a>
+          <a href="https://github.com/ipTronix/SmartTool/zipball/master" class="downloadbutton">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/ipTronix/SmartTool/tarball/master" class="downloadbutton">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/ipTronix/SmartTool"></a> is maintained by <a href="https://github.com/ipTronix">ipTronix</a>.</p>
+
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
