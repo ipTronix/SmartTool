@@ -66,7 +66,7 @@ a:hover {
 header {
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 1px #275da1;
 }
@@ -85,7 +85,7 @@ header h2 {
   color: #9ddcff;
   font-weight: normal;
   line-height: 1.3;
-  width: 540px;
+  width: 650px;
   letter-spacing: 0;
 }
 
@@ -136,9 +136,23 @@ a.button {
   color: #fff;
   padding-left: 68px;
   padding-top: 22px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+}
+a.downloadbutton {
+  width: 134px;
+  height: 58px;
+  line-height: 1.2;
+  font-size: 23px;
+  color: #fff;
+  padding-left: 68px;
+  padding-top: 22px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }
 a.button small {
+  display: block;
+  font-size: 11px;
+}
+a.downloadbutton small {
   display: block;
   font-size: 11px;
 }
@@ -149,6 +163,15 @@ header a.button {
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
+  width: 200px;
+  padding-left: 0px;
+  text-align: center; 
+  display: block;
+  background: transparent url(../images/button.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+aside a.downloadbutton {
   width: 138px;
   padding-left: 64px;
   display: block;
@@ -225,35 +248,35 @@ form {
 /* GENERAL ELEMENT TYPE STYLES */
 
 #main-content h1 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 2.8em;
   letter-spacing: -1px;
   color: #474747;
 } 
 
 #main-content h1:before {
-  content: "/";
+ // content: "/";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -0.9em;
 }
 
 #main-content h2 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 8px;
   color: #474747;
 } 
 #main-content h2:before {
-  content: "//";
+  //content: "//";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -1.5em;
 }
 
 #main-content h3 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 18px;
   font-weight: bold;
   margin-top: 24px;
@@ -262,45 +285,45 @@ form {
 } 
  
 #main-content h3:before {
-  content: "///";
+  //content: "///";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -2em;
 }
 
 #main-content h4 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 15px;
   font-weight: bold;
   color: #474747;
 } 
 
 h4:before {
-  content: "////";
+  //content: "////";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -2.8em;
 }
 
 #main-content h5 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 14px;
   color: #474747;
 } 
 h5:before {
-  content: "/////";
+  //content: "/////";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -3.2em;
 }
 
 #main-content h6 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: .8em;
   color: #474747;
 } 
 h6:before {
-  content: "//////";
+  //content: "//////";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -3.7em;
@@ -458,6 +481,9 @@ footer a:hover {
     min-height: 0;
   }
   aside#sidebar a.button {
+    display: none;
+  }
+  aside#sidebar a.downloadbutton {
     display: none;
   }
   #main-content h1:before,
