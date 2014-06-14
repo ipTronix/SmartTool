@@ -10,4 +10,4 @@ Demo applications include card emulation, card reader, vending machine, authenti
 
 The project is completely open source and although was initially released only to customers buying the board, now it has been publicly released in full on github.
 
-Please visit the wiki at https://github.com/ipTronix/SmartTool/wiki to learn more
+Please visit the wiki home page at http://iptronix.github.io/SmartTool/ or wiki at https://github.com/ipTronix/SmartTool/wiki to learn more
