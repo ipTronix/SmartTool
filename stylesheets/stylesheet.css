@@ -481,10 +481,10 @@ footer a:hover {
     min-height: 0;
   }
   aside#sidebar a.button {
-    display: none;
+/*    display: none;*/
   }
   aside#sidebar a.downloadbutton {
-    display: none;
+/*    display: none;*/
   }
   #main-content h1:before,
   #main-content h2:before,
